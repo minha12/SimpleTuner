@@ -1,0 +1,60 @@
+[
+  {
+    "id": "images-512",
+    "type": "local",
+    "instance_data_dir": "./datasets/quilt-1m/quilt_1m_samples",
+    "crop": true,
+    "crop_style": "center",
+    "minimum_image_size": 256,
+    "maximum_image_size": 768,
+    "target_downsample_size": 512,
+    "resolution": 512,
+    "resolution_type": "pixel_area",
+    "repeats": 1,
+    "metadata_backend": "discovery",
+    "caption_strategy": "textfile",
+    "cache_dir_vae": "./test/vae-512",
+    "probability": 0.2
+  },
+  {
+    "id": "images-768",
+    "type": "local",
+    "instance_data_dir": "./datasets/quilt-1m/quilt_1m_samples",
+    "crop": true,
+    "crop_style": "center",
+    "minimum_image_size": 512,
+    "maximum_image_size": 1024,
+    "target_downsample_size": 768,
+    "resolution": 768,
+    "resolution_type": "pixel_area",
+    "repeats": 1,
+    "metadata_backend": "discovery",
+    "caption_strategy": "textfile",
+    "cache_dir_vae": "./test/vae-768",
+    "probability": 0.3
+  },
+  {
+    "id": "images-1024",
+    "type": "local",
+    "instance_data_dir": "./datasets/quilt-1m/quilt_1m_samples",
+    "crop": true,
+    "crop_style": "center", 
+    "minimum_image_size": 768,
+    "target_downsample_size": 1024,
+    "resolution": 1024,
+    "resolution_type": "pixel_area",
+    "repeats": 1,
+    "metadata_backend": "discovery",
+    "caption_strategy": "textfile",
+    "cache_dir_vae": "./test/vae-1024",
+    "probability": 0.5
+  },
+  {
+    "id": "text-embed-cache",
+    "dataset_type": "text_embeds",
+    "default": true,
+    "type": "local",
+    "cache_dir": "./test/text",
+    "write_batch_size": 128
+  }
+]
