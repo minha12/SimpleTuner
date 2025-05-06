@@ -66,3 +66,5 @@ static
 templates
 api_state.json
 datasets/
+test/
+
