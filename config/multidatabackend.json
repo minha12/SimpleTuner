@@ -1,0 +1,35 @@
+[
+    {
+        "id": "quilt",
+        "type": "local",
+        "instance_data_dir": "./datasets/quilt",
+        "crop": true,
+        "crop_style": "center",
+        "crop_aspect": "square",
+        "minimum_image_size": 512,
+        "maximum_image_size": 4096,
+        "target_downsample_size": 1024,
+        "resolution": 1024,
+        "resolution_type": "pixel_area",
+        "prepend_instance_prompt": false,
+        "instance_prompt": "",
+        "only_instance_prompt": false,
+        "caption_strategy": "textfile",
+        "cache_dir_vae": "./cache/vae",
+        "vae_cache_clear_each_epoch": true,
+        "probability": 1.0,
+        "repeats": 1,
+        "skip_file_discovery": "",
+        "text_embeds": "alt-embed-cache",
+        "preserve_data_backend_cache": true
+    },
+    {
+        "id": "alt-embed-cache",
+        "dataset_type": "text_embeds",
+        "default": true,
+        "type": "local",
+        "cache_dir": "./cache/embed-cache",
+        "disabled": false,
+        "write_batch_size": 128
+    }
+]
